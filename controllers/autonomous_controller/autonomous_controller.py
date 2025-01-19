@@ -20,15 +20,21 @@ class AutonomousSoccerRobot:
         self.camera.enable(self.time_step)
 
         # Distance sensor for collision avoidance
-        self.front_sensor = self.robot.getDevice('ps7')  # Example distance sensor
-        self.front_sensor.enable(self.time_step)
+        # self.front_sensor = self.robot.getDevice('ps7')  # Example distance sensor
+        # self.front_sensor.enable(self.time_step)
 
         # Define constants
         self.chase_speed = 6.28
-        self.avoid_obstacle_speed = 2.0
+        # self.avoid_obstacle_speed = 2.0
 
     def run(self):
         while self.robot.step(self.time_step) != -1:
+            # distance = self.front_sensor.getValue()
+            # if distance < 2:  # Threshold for collision
+                # self.left_motor.setVelocity(-self.avoid_obstacle_speed)
+                # self.right_motor.setVelocity(self.avoid_obstacle_speed)
+                # continue
+    
             # Capture ball position using the camera
             ball_position = self.get_ball_position()
 
