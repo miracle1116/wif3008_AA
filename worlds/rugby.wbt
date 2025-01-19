@@ -1,0 +1,238 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "../protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/geometries/protos/TexturedBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/CircleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/factory/containers/protos/WoodenBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/obstacles/protos/OilBarrel.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.11617851727890248 -0.9695355423179762 0.21564643355516905 5.268832139513216
+  position -1.596463892589893 0.38636885742795485 2.4968468435619138
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+E-puck {
+  hidden position_0_0 1477.0538332563995
+  hidden position_0_1 370.8466792727327
+  hidden linearVelocity_0 -1.0618140196433864e-05 1.7792664528148875e-07 -3.20623507989042e-05
+  hidden angularVelocity_0 -1.2092412452537815e-05 -1.2797581805106208e-06 -2.111194362395766
+  hidden rotation_1 0 1 0 2.5903548605639792
+  hidden linearVelocity_1 -0.007291586134757918 0.05488850703298317 3.911046860807233e-05
+  hidden angularVelocity_1 -2.9764514912612414 -0.38450884643928807 -2.149942254915564
+  hidden rotation_2 0 -1 0 5.435670596669983
+  hidden linearVelocity_2 0.0072702947087056324 -0.054888021728518116 3.911096880813146e-05
+  hidden angularVelocity_2 2.976427378149703 0.38450589096894144 -2.1499410430919728
+  translation -0.23149896236069495 -0.8234895347235544 -0.0001150515744941915
+  rotation 7.261537807879263e-07 -7.665914612797559e-07 0.9999999999994426 1.659693235372304
+  name "ball-chaser_1"
+  controller "autonomous_controller"
+  baseColor 0.2 0 1
+}
+E-puck {
+  hidden position_0_0 1448.1789432596463
+  hidden position_0_1 242.62152643640377
+  hidden linearVelocity_0 0.00013721625145369956 -2.7585962778272845e-06 -2.9051599819701585e-05
+  hidden angularVelocity_0 0.0001728294297363962 9.795289268107541e-05 -2.116271692733559
+  hidden rotation_1 0 -1 0 5.895148220260209
+  hidden linearVelocity_1 0.027305426525175237 -0.04841221015072423 4.1914532742026755e-05
+  hidden angularVelocity_1 2.6223435686453183 1.4599983755857275 -2.155251834324134
+  hidden rotation_2 0 -1 0 2.208859255953532
+  hidden linearVelocity_2 -0.027029385636332823 0.04840525898408789 4.188733851151483e-05
+  hidden angularVelocity_2 -2.621999053714966 -1.4598006829221954 -2.155240835897228
+  translation -0.6165594335059086 -0.5911310905483605 -0.0001156510754284374
+  rotation -1.3516408464677987e-05 -2.0175937487383875e-05 -0.9999999997051191 1.1024196799955703
+  name "ball-chaser_2"
+  controller "autonomous_controller"
+  baseColor 0.2 0 1
+}
+E-puck {
+  hidden position_0_0 1097.933936251516
+  hidden position_0_1 1183.8418173758364
+  hidden linearVelocity_0 8.081179009282372e-05 -1.1854080467461823e-05 0.001072365523783657
+  hidden angularVelocity_0 0.0008975279654182074 0.005409177754881622 3.9891891018246694e-05
+  hidden rotation_1 0 -1 0 4.518809063828977
+  hidden linearVelocity_1 0.00010757801149808844 -1.4459479537832339e-05 0.001028161416183285
+  hidden angularVelocity_1 0.0008149678267672911 0.005394921880538884 9.003746841490344e-06
+  hidden rotation_2 0 1 0 1.1314353549090717
+  hidden linearVelocity_2 0.0001082180668624394 -1.8138982896956352e-05 0.0011169455212042293
+  hidden angularVelocity_2 0.000814941068131716 0.005394917468896067 8.999262958093671e-06
+  translation -0.8078882506162286 -0.001588553229623453 -0.00020099297182602296
+  rotation -0.0003177700778603598 9.001622354386721e-05 0.9999999454596271 -2.9707131536732856
+  name "user"
+  controller "rugby_controller_2"
+  supervisor TRUE
+  baseColor 1 0 0
+}
+WoodenBox {
+  translation 0.144559 0.00536214 0.05
+  rotation 0 0 1 0.261799
+  size 0.1 0.1 0.1
+}
+WoodenBox {
+  translation -0.163291 -0.584409 0.05
+  rotation 0 0 1 0.261799
+  name "wooden box(4)"
+  size 0.1 0.1 0.1
+}
+WoodenBox {
+  translation 0.1 0.11 0.05
+  name "wooden box(1)"
+  size 0.1 0.1 0.1
+}
+WoodenBox {
+  translation -0.570211 0.723123 0.05
+  rotation 0 0 1 0.261799
+  name "wooden box(9)"
+  size 0.1 0.1 0.1
+}
+WoodenBox {
+  translation -0.725236 0.656756 0.05
+  rotation 0 0 1 -0.261795307179586
+  name "wooden box(7)"
+  size 0.1 0.1 0.1
+}
+WoodenBox {
+  translation 0.34 0.58 0.05
+  name "wooden box(2)"
+  size 0.1 0.1 0.1
+}
+WoodenBox {
+  translation -0.626038 0.631591 0.05
+  rotation 0 0 1 -0.261795307179586
+  name "wooden box(8)"
+  size 0.1 0.1 0.1
+}
+WoodenBox {
+  translation -0.0819618 -0.65268 0.05
+  rotation 0 0 1 -0.523595307179586
+  name "wooden box(5)"
+  size 0.1 0.1 0.1
+}
+WoodenBox {
+  translation -0.096603 -0.59804 0.15
+  rotation 0 0 1 -0.523595307179586
+  name "wooden box(6)"
+  size 0.1 0.1 0.1
+}
+WoodenBox {
+  translation -0.05 -0.55 0.05
+  name "wooden box(3)"
+  size 0.1 0.1 0.1
+}
+CircleArena {
+}
+DEF GOAL_SIGNBOARD Pose {
+  translation 0.02 1.43 0.29
+  rotation 0 0 1 -1.5707953071795862
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+        texture ImageTexture {
+          url [
+            "../controllers/rugby_controller_2/textures/goal_signboard.png"
+          ]
+        }
+      }
+      geometry TexturedBox {
+        size 0.2 0.2 0.2
+      }
+    }
+  ]
+}
+DEF BALL Solid {
+  translation 0.019370131713433072 0.08079871855430898 0.02845043376839385
+  rotation -0.08282944434270101 0.28492759021623976 -0.9549636388279117 -1.8353614230955877
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 0.5 0
+        }
+      }
+      geometry Sphere {
+        radius 0.03
+      }
+    }
+  ]
+  boundingObject Sphere {
+    radius 0.03
+  }
+  physics Physics {
+    mass 1
+  }
+  linearVelocity 0.033660010644814706 0.14026763365694872 -0.00015807287280378895
+  angularVelocity -4.6755877885649575 1.1220003548271569 4.832730112964349
+}
+DEF GOAL_BLUE Solid {
+  translation 0.86 0 0.0005
+  rotation 1 0 0 1.5708
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0 0 1
+        }
+      }
+      geometry Box {
+        size 0.01 0.0001 1
+      }
+    }
+  ]
+  boundingObject Box {
+    size 0.05 0.01 0.01
+  }
+}
+DirectionalLight {
+  direction 1 3 0
+}
+OilBarrel {
+  translation 0.49 -0.5 0.075
+  height 0.15
+  radius 0.05
+}
+OilBarrel {
+  translation -0.12 0.45 0.075
+  name "oil barrel(2)"
+  height 0.15
+  radius 0.05
+}
+OilBarrel {
+  translation -0.58 -0.36 0.075
+  name "oil barrel(1)"
+  height 0.15
+  radius 0.05
+}
+OilBarrel {
+  translation -0.67 -0.41 0.075
+  name "oil barrel(3)"
+  height 0.15
+  radius 0.05
+}
+DEF Wall Solid {
+  translation 0.66 0.019999999999999605 0.06
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 0 0
+        }
+      }
+      geometry Box {
+        size 0.002 0.15 0.12
+      }
+    }
+  ]
+  boundingObject Box {
+    size 0.002 0.15 0.15
+  }
+}
