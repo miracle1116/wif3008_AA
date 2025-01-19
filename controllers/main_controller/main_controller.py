@@ -61,9 +61,9 @@ def update_end_texture(count):
     appearance_node = shape_node.getField("appearance").getSFNode()  # Get the Appearance node
     texture_node = appearance_node.getField("texture").getSFNode()  # Get the ImageTexture node
     url_field = texture_node.getField("url")  # Get the 'url' field of the ImageTexture node
-    url_field.setMFString(0, "../controllers/rugby_controller_2/textures/temp.png")
+    url_field.setMFString(0, "../controllers/main_controller/textures/temp.png")
     supervisor.step(1) 
-    url_field.setMFString(0, "../controllers/rugby_controller_2/" +img_path)# Update the texture file path
+    url_field.setMFString(0, "../controllers/main_controller/" +img_path)# Update the texture file path
     supervisor.step(1) 
 
 def update_signboard_texture(count, remaining_time):
@@ -83,9 +83,9 @@ def update_signboard_texture(count, remaining_time):
     appearance_node = shape_node.getField("appearance").getSFNode()  # Get the Appearance node
     texture_node = appearance_node.getField("texture").getSFNode()  # Get the ImageTexture node
     url_field = texture_node.getField("url")  # Get the 'url' field of the ImageTexture node
-    url_field.setMFString(0, "../controllers/rugby_controller_2/textures/temp.png")
+    url_field.setMFString(0, "../controllers/main_controller/textures/temp.png")
     supervisor.step(1) 
-    url_field.setMFString(0, "../controllers/rugby_controller_2/" +img_path)# Update the texture file path
+    url_field.setMFString(0, "../controllers/main_controller/" +img_path)# Update the texture file path
     supervisor.step(1) 
     
 update_signboard_texture(goal_count, total_time)
